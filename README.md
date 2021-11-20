@@ -60,7 +60,8 @@ To understand the distribution of the covariates in the filtered Framingham data
 
 
 
-| Figure 6: |
+
+| Figure 6  | Multiple Logistic Regression Model taking consideration of covariates current cigarette smoker, age group, isolated systolic hypertension, and cholesterol category to predict a value for hypertension on the average patient.  |
 | ------------- | ------------- |
 | ![6_1](https://user-images.githubusercontent.com/73903035/142740893-d8a03b08-8e68-4a20-afe4-258e3fcc74f5.png)  | ![6_2](https://user-images.githubusercontent.com/73903035/142740894-312a8b17-f8ee-4604-9b44-0968adc68780.png)  |
 | ![6_3](https://user-images.githubusercontent.com/73903035/142740896-b1d20c15-4eee-460f-993f-e4bfe54b7762.png)  | ![6_7](https://user-images.githubusercontent.com/73903035/142740900-ad2d755c-4d78-4812-b706-a35c9eca607f.png)  |
@@ -116,7 +117,7 @@ Figure 5e: Distribution results of age in the Framingham Heart Study dataset.
 
 Note: 124 observations were deleted due to missing values for the response and explanatory variables.
  
-Figure 6: Multiple Logistic Regression Model taking consideration of covariates current cigarette smoker, age group, isolated systolic hypertension, and cholesterol category to predict a value for hypertension on the average patient. 
+
 
 ## Results
 
