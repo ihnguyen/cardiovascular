@@ -74,6 +74,7 @@ To understand the distribution of the covariates in the filtered Framingham data
 
 <details><summary>Figure 5a</summary>
 <p>
+	
 | Figure 5a  | Distribution results of incident hypertension in the Framingham Heart Study dataset. |
 | ------------- | ------------- |
 | ![5a_2](https://user-images.githubusercontent.com/73903035/142743696-8378ff2a-ea7c-48c8-8c70-d0bc90fe8ce7.png)  |  ![5a_1](https://user-images.githubusercontent.com/73903035/142743695-9bb8280b-a5c6-4053-8b74-55081f392ee9.png) |
