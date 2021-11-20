@@ -72,12 +72,14 @@ Figure 4: Frequency of hypertension and each cholesterol category, healthy, bord
 To understand the distribution of the covariates in the filtered Framingham dataset, proc univariate was used in Figures 5 to assess the normality and discover of outliers. Figures 5a – 5e displayed the distribution of the Framingham Heart Study patients by their incident hypertension, serum cholesterol, current smoking status, isolated systolic hypertension status, and age.
 
 
-
+<details><summary>Figure 5a</summary>
+<p>
 | Figure 5a  | Distribution results of incident hypertension in the Framingham Heart Study dataset. |
 | ------------- | ------------- |
 | ![5a_2](https://user-images.githubusercontent.com/73903035/142743696-8378ff2a-ea7c-48c8-8c70-d0bc90fe8ce7.png)  |  ![5a_1](https://user-images.githubusercontent.com/73903035/142743695-9bb8280b-a5c6-4053-8b74-55081f392ee9.png) |
 | ![5a_3](https://user-images.githubusercontent.com/73903035/142743697-e3e6b8d3-ae89-45c0-b61e-9192dad1f441.png)  | ![5a_4](https://user-images.githubusercontent.com/73903035/142743698-94859c79-04e1-4839-b8dc-ceb46ba972c7.png)  |
-
+</p>
+</details>
 
 
 | Figure 5b  | Distribution results of serum cholesterol in the Framingham Heart Study dataset. |
