@@ -71,11 +71,13 @@ To understand the distribution of the covariates in the filtered Framingham data
 ![6_6](https://user-images.githubusercontent.com/73903035/142740899-9adc4bb3-16a2-428f-89aa-b1df55a01ef0.png)
 ![6_7](https://user-images.githubusercontent.com/73903035/142740900-ad2d755c-4d78-4812-b706-a35c9eca607f.png)
 
-![5c_1](https://user-images.githubusercontent.com/73903035/142740909-d3cad03f-3607-4cfc-aed0-5bf65b5f328f.png)
-![5c_2](https://user-images.githubusercontent.com/73903035/142740911-ce5acc18-4c67-4d9f-8400-43b45b153c6d.png)
 
 
 
+
+| First Header  | Second Header |
+| ------------- | ------------- |
+| ![5c_1](https://user-images.githubusercontent.com/73903035/142740909-d3cad03f-3607-4cfc-aed0-5bf65b5f328f.png)  | ![5c_2](https://user-images.githubusercontent.com/73903035/142740911-ce5acc18-4c67-4d9f-8400-43b45b153c6d.png)  |
 
 
 
