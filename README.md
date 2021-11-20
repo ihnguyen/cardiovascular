@@ -60,12 +60,12 @@ To understand the distribution of the covariates in the filtered Framingham data
 
 
 
-| First Header  | Second Header |
+| Figure 6: |
 | ------------- | ------------- |
 | ![6_1](https://user-images.githubusercontent.com/73903035/142740893-d8a03b08-8e68-4a20-afe4-258e3fcc74f5.png)  | ![6_2](https://user-images.githubusercontent.com/73903035/142740894-312a8b17-f8ee-4604-9b44-0968adc68780.png)  |
-| ![6_3](https://user-images.githubusercontent.com/73903035/142740896-b1d20c15-4eee-460f-993f-e4bfe54b7762.png)  | ![6_4](https://user-images.githubusercontent.com/73903035/142740897-84093ac7-e7d6-4827-962f-d55e104fa69a.png)  |
+| ![6_3](https://user-images.githubusercontent.com/73903035/142740896-b1d20c15-4eee-460f-993f-e4bfe54b7762.png)  | ![6_7](https://user-images.githubusercontent.com/73903035/142740900-ad2d755c-4d78-4812-b706-a35c9eca607f.png)  |
 | ![6_5](https://user-images.githubusercontent.com/73903035/142740898-e7f96782-4318-4dca-a90e-38dd847fbce2.png)  | ![6_6](https://user-images.githubusercontent.com/73903035/142740899-9adc4bb3-16a2-428f-89aa-b1df55a01ef0.png)  |
-| ![6_7](https://user-images.githubusercontent.com/73903035/142740900-ad2d755c-4d78-4812-b706-a35c9eca607f.png)  | Content Cell  |
+Model Converge Status: Convergence criterion (GCONV = 1E-8) satisfied.
 
 
 | First Header  | Second Header |
