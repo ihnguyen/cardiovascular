@@ -1,18 +1,23 @@
-Does high levels of cholesterol increase your odds of having hypertension?
+# Does high levels of cholesterol increase your odds of having hypertension?
 
-By Thuy-Nhi Nguyen
+## By Thuy-Nhi Nguyen
 
-HCA202 – Applied Healthcare Statistics – UC Davis Continuing and Professional Education Program
+### HCA202 – Applied Healthcare Statistics – UC Davis Continuing and Professional Education Program
 
 
-Introduction
+## Introduction
+
 According to the cdc.gov data statistics on heart disease, “heart disease is the leading cause of death for both men and women.”1 Risk factors for heart disease include high blood pressure, high cholesterol, and smoking.1 Studies have shown that high levels of cholesterol increases the risk of heart disease. Other studies have shown that having high blood pressure or hypertension also increases the risk of heart disease. Not many studies mentioned if there is a causal relationship between high cholesterol and hypertension. This retrospective research study aims to improve healthcare processes by identifying if high cholesterol increases the odds of having hypertension.
 The data was obtained from Framingham Heart Study electronic health record data where the primary research consisted of over 10,000 female and male participants ranging from ages 30-80 years old for an epidemiological study to provide information on cardiovascular disease and its risk factors.2 A nested case-control study design was employed in this research due to limited resources but nonetheless assisted in hypothesis generation, predictors and confounders identification, and focus on one outcome. This study design approach allowed the cases and the controls to be more comparable therefore representative of the population. The research questions to be answered were “Does high levels of cholesterol increase odds of having hypertension? Are they correlated? Are they associated? What is the effect of high levels of cholesterol on the odds of having hypertension after controlling for current smoking status, age, and isolated systolic hypertension?” To discover the importance of cholesterol in the presence or absence of hypertension, exposure and outcome associations were evaluated.
 
 
-Background
+## Background
+
 	The primary model was conducted using a multiple logistic regression analysis to determine the odds of the outcome given exposure. According to cdc.gov, the purpose of a multiple logistic regression was to “isolate the relationship between the exposure variable and the outcome variable from the effects of one or more other variables (called the covariates or confounders).”3 The model enabled the exploration of associations between hypertension and the predictor variables from the odds ratio values. The research focused primarily on the relationship between the predictor variable total cholesterol on the outcome variable hypertension. Requirements for the multiple logistic regression model were a dichotomous outcome variable and continuous or discrete predictor variables. The following equation 1 depicted the relationship between hypertension and the predictors for this study:
+	
 (1) hypertension = cholesterol + age + isolated systolic hypertension + current smoking status
+
+
  Prior to this research, predictors such as sex, body mass index, and anti-hypertensive medications were analyzed using the multiple logistic regression model and found to be unstable therefore were not included in the research. Predictors that were deemed stable confounders were current cigarette smoking status (CURSMOKE), age (AGE), and isolated systolic hypertension (ISH). The relationship between hypertension (HYPERTEN) and total cholesterol (TOTCHOL) were assessed with stable confounders. To determine what is considered high cholesterol, the total cholesterol guidelines from the National Heart, Lung, and Blood Institute were followed as shown in Table 1.4 Webmd.com guidelines were followed to create the confounding variable isolated systolic hypertension shown in Table 2.5
 Status	Range (in mg/dL)
 Healthy	< 200
@@ -27,7 +32,8 @@ Diastolic Blood Pressure	< 90
 Table 2: Isolated Systolic Hypertension ranges according to WebMD guidelines.
 
 
-Method
+## Method
+
 The library was set to a filename “HCA202” with a copy of the Framingham Heart Study for analysis manipulation. In Figure 1, proc contents was performed to determine the number of observations and variables in the dataset. The data was subsetted to contain only relevant data by filtering the dataset with proc sql. In order to include appropriate variables, a standardized approach involving backward elimination was used to begin the modelling process. This approach considered all 38 variables and excluded the variables that were not relevant to the research question. The process evaluated the effect of each variable on the estimate of interest and reduced the dataset to 10 variables with the same 11627 observations.
  
 Figure 1: Contents on observations and variables displayed from Framingham Heart Study dataset.
@@ -58,7 +64,8 @@ Figure 5d: Distribution results of Isolated Systolic Hypertension in the Framing
 Figure 5e: Distribution results of age in the Framingham Heart Study dataset.
  
 Figure 6: Multiple Logistic Regression Model taking consideration of covariates current cigarette smoker, age group, isolated systolic hypertension, and cholesterol category to predict a value for hypertension on the average patient. 
-Results
+
+## Results
 
 In Figure 2, the plot procedure represented many observations through a plot by showing more than half of the patients had abnormal total cholesterol levels with little less than 9,500 patient observations hidden and little over 400 observations missing. The graph concluded that patients with hypertension had higher total cholesterol than patients without hypertension and the data was not normally distributed.
 Shown in Figure 3, the correlation procedure estimated the average patient has high cholesterol levels. The Pearson Correlation Coefficients was not analyzed due to hypertension not being a continuous variable. Another procedure (proc freq) was performed to determine if hypertension and total cholesterol were correlated. Incident hypertension and total cholesterol with p-values less than alpha 0.05 suggested statistical significance in their correlation.
@@ -70,18 +77,21 @@ The logistic procedure evaluated the effects of cholesterol, smoking status, age
 The odds ratio estimate table in Figure 6 calculated that a patient with borderline high levels of cholesterol was 17% more likely to have hypertension than a patient with healthy levels of cholesterol. If a patient had high levels of cholesterol, they were 52% more likely to have hypertension than a patient with healthy levels of cholesterol. If a patient was a non-smoker, they were 39% more likely to have hypertension than a smoker. If a patient was in their 40s, they were 24% more likely to have hypertension. If a patient was in their 50s, they were 57% more likely to have hypertension. If a patient was in their 60s, they were 2.1x more likely to have hypertension. If a patient was in their 70s, they were 2.4% more likely to have hypertension.
 
 
-Discussion
+## Discussion
+
 The plot in Figure 2 didn’t provide much information because most of the data was missing or hidden although the data determined that a multiple logistic regression was an appropriate model. The model had the best c-statistic of 0.70 and p-values less than alpha 0.05 which indicated the model predicted what was observed well. Low p-values determined that the estimates were statistically significant. Both factors were important attributes to obtain the best model. Though the other models had relevant confounders such as body mass index, anti-hypertensives, and sex and a better fitted model statistics, they had low c-statistics and high p-values which made the models unstable. Thereby the confounders were limited to isolated systolic hypertension, age, and current smoker status due to stable p-values in respect of the relationship between hypertension and total cholesterol.
 Isolated systolic hypertension was included in the study because studies have shown it was common type of hypertension amongst older adults.6 Due to the limitation of the Framingham Heart Study dataset, the age range wasn’t widely distributed to consider populations over 80 years old contributing to the low p-value to the age group. Isolated systolic hypertension couldn’t be assessed effectively due to inadequate information in the dataset but could be resolved by increasing the sample size in the 80+ age groups for future studies.
 The most surprising result shown from the analysis was that non-smokers had greater odds of having hypertension than patients that smoke. Contrary to popular belief, smoking is a type of cardiovascular risk factor. The conclusions cannot be applied to the general population because the applied inclusion and exclusion criteria was already prematurely executed for primary research reasons.
 
 
-Conclusion
+## Conclusion
+
 Heart disease has many risk factors which were evaluated in this research. All the predictors showed an increase resulting in the increase of the odds of having hypertension. The only exception was smoking which the statistics stated otherwise. Since many studies identified smoking as a cardiovascular risk factor, conclusions on the statistics on current smoking status were rejected. Assessing model statistics requires careful consideration of expert and content specific knowledge because statistics cannot be heavily relied on due to the assumptions made prior to the research.
 Though the focal point of the analysis was to estimate the predictors on hypertension, statistics does not determine conclusions to the research questions. Nevertheless, high levels of cholesterol did increase the odds of having hypertension as well as have a correlation of  0.1 meaning as cholesterol increases, then the odds of hypertension increases too. Hypertension and cholesterol were also found to have a low to medium association according to Cramer’s V. The overall effect of high levels of cholesterol on the odds of hypertension after controlling current smoking status, age, and isolated systolic hypertension increase the odds of having hypertension from 17% to 52%. Research concludes that having high levels of cholesterol could increase the odds of hypertension but there is inadequate information to confirm this would apply to the general population due to design bias. Clearly, hypertension and cholesterol are classified as cardiovascular risk factors and should both be carefully monitored to achieve a healthy heart lifestyle.
 
  
-References
+## References
+
 1) Centers for Disease Control and Prevention. Heart Disease Death Rates, 2014-2016 Adults, Ages 35+, by County. Heart Disease Fact Sheet. Published on 2017 Aug 23. Retrieved 2019 November 30 from https://www.cdc.gov/dhdsp/data_statistics/fact_sheets/fs_heart_disease.htm
 2) Mahmood, S. S., Levy, D., Vasan, R. S., and Wang, T. J. The Framingham Heart Study and the Epidemiology of Cardiovascular Diseases: A Historical Perspective. Lancet. 2014 Mar 15; 383(9921):999-1008. https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4159698/
 3) Centers for Disease Control and Prevention. NHANES Dietary Web Tutorial: Examine the Relationship Between Supplement use and a Categorical Outcome Using a Chi-Square Test. Retrieved 2019 Nov 30 from https://www.cdc.gov/nchs/tutorials/dietary/Advanced/EstimatePrevalence/Info3.htm
