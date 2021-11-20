@@ -75,14 +75,14 @@ To understand the distribution of the covariates in the filtered Framingham data
 
 | Figure 5a  | Distribution results of incident hypertension in the Framingham Heart Study dataset. |
 | ------------- | ------------- |
-| ![5a_1](https://user-images.githubusercontent.com/73903035/142743695-9bb8280b-a5c6-4053-8b74-55081f392ee9.png)  | ![5a_2](https://user-images.githubusercontent.com/73903035/142743696-8378ff2a-ea7c-48c8-8c70-d0bc90fe8ce7.png)  |
+| ![5a_2](https://user-images.githubusercontent.com/73903035/142743696-8378ff2a-ea7c-48c8-8c70-d0bc90fe8ce7.png)  |  ![5a_1](https://user-images.githubusercontent.com/73903035/142743695-9bb8280b-a5c6-4053-8b74-55081f392ee9.png) |
 | ![5a_3](https://user-images.githubusercontent.com/73903035/142743697-e3e6b8d3-ae89-45c0-b61e-9192dad1f441.png)  | ![5a_4](https://user-images.githubusercontent.com/73903035/142743698-94859c79-04e1-4839-b8dc-ceb46ba972c7.png)  |
 
 
 
 | Figure 5b  | Distribution results of serum cholesterol in the Framingham Heart Study dataset. |
 | ------------- | ------------- |
-| ![5b_1](https://user-images.githubusercontent.com/73903035/142740901-488d9914-f66e-478b-b127-2ddc5d810bf7.png)  | ![5b_2](https://user-images.githubusercontent.com/73903035/142740902-edca87fc-51c2-4bef-84ab-b053cca32fd2.png)  |
+| ![5b_2](https://user-images.githubusercontent.com/73903035/142740902-edca87fc-51c2-4bef-84ab-b053cca32fd2.png)  |  ![5b_1](https://user-images.githubusercontent.com/73903035/142740901-488d9914-f66e-478b-b127-2ddc5d810bf7.png) |
 | ![5b_3](https://user-images.githubusercontent.com/73903035/142740905-61413af3-3318-4474-b0f7-7006142ce183.png)  | ![5b_4](https://user-images.githubusercontent.com/73903035/142740908-a85713b2-1025-4054-9e0c-5d3b9108457b.png)  |
 
 
