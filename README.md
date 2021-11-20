@@ -1,35 +1,40 @@
 # Does high levels of cholesterol increase your odds of having hypertension?
 
-## By Thuy-Nhi Nguyen
-
-### HCA202 – Applied Healthcare Statistics – UC Davis Continuing and Professional Education Program
+### By Thuy-Nhi Nguyen
 
 
 ## Introduction
 
 According to the cdc.gov data statistics on heart disease, “heart disease is the leading cause of death for both men and women.”1 Risk factors for heart disease include high blood pressure, high cholesterol, and smoking.1 Studies have shown that high levels of cholesterol increases the risk of heart disease. Other studies have shown that having high blood pressure or hypertension also increases the risk of heart disease. Not many studies mentioned if there is a causal relationship between high cholesterol and hypertension. This retrospective research study aims to improve healthcare processes by identifying if high cholesterol increases the odds of having hypertension.
+
 The data was obtained from Framingham Heart Study electronic health record data where the primary research consisted of over 10,000 female and male participants ranging from ages 30-80 years old for an epidemiological study to provide information on cardiovascular disease and its risk factors.2 A nested case-control study design was employed in this research due to limited resources but nonetheless assisted in hypothesis generation, predictors and confounders identification, and focus on one outcome. This study design approach allowed the cases and the controls to be more comparable therefore representative of the population. The research questions to be answered were “Does high levels of cholesterol increase odds of having hypertension? Are they correlated? Are they associated? What is the effect of high levels of cholesterol on the odds of having hypertension after controlling for current smoking status, age, and isolated systolic hypertension?” To discover the importance of cholesterol in the presence or absence of hypertension, exposure and outcome associations were evaluated.
 
 
 ## Background
 
-	The primary model was conducted using a multiple logistic regression analysis to determine the odds of the outcome given exposure. According to cdc.gov, the purpose of a multiple logistic regression was to “isolate the relationship between the exposure variable and the outcome variable from the effects of one or more other variables (called the covariates or confounders).”3 The model enabled the exploration of associations between hypertension and the predictor variables from the odds ratio values. The research focused primarily on the relationship between the predictor variable total cholesterol on the outcome variable hypertension. Requirements for the multiple logistic regression model were a dichotomous outcome variable and continuous or discrete predictor variables. The following equation 1 depicted the relationship between hypertension and the predictors for this study:
+The primary model was conducted using a multiple logistic regression analysis to determine the odds of the outcome given exposure. According to cdc.gov, the purpose of a multiple logistic regression was to “isolate the relationship between the exposure variable and the outcome variable from the effects of one or more other variables (called the covariates or confounders).”3 The model enabled the exploration of associations between hypertension and the predictor variables from the odds ratio values. The research focused primarily on the relationship between the predictor variable total cholesterol on the outcome variable hypertension. Requirements for the multiple logistic regression model were a dichotomous outcome variable and continuous or discrete predictor variables. The following equation 1 depicted the relationship between hypertension and the predictors for this study:
 	
 (1) hypertension = cholesterol + age + isolated systolic hypertension + current smoking status
 
 
  Prior to this research, predictors such as sex, body mass index, and anti-hypertensive medications were analyzed using the multiple logistic regression model and found to be unstable therefore were not included in the research. Predictors that were deemed stable confounders were current cigarette smoking status (CURSMOKE), age (AGE), and isolated systolic hypertension (ISH). The relationship between hypertension (HYPERTEN) and total cholesterol (TOTCHOL) were assessed with stable confounders. To determine what is considered high cholesterol, the total cholesterol guidelines from the National Heart, Lung, and Blood Institute were followed as shown in Table 1.4 Webmd.com guidelines were followed to create the confounding variable isolated systolic hypertension shown in Table 2.5
-Status	Range (in mg/dL)
-Healthy	< 200
-Borderline High	200 - 239
-High	> 240
+ 
+| Status  | Range (in mg/dL) |
+| ------------- | ------------- |
+| Healthy  | <200  |
+| Borderline High  | 200 - 239  |
+| High  | >240  |
 
-Table 1: Cholesterol categories from NHLB Institute guidelines.
-Blood Pressure Type	Range (in mm Hg)
-Systolic Blood Pressure	> 140
-Diastolic Blood Pressure	< 90
+*Table 1: Cholesterol categories from NHLB Institute guidelines.*
 
-Table 2: Isolated Systolic Hypertension ranges according to WebMD guidelines.
+
+
+| Blood Pressure Type  | Range (in mm Hg) |
+| ------------- | ------------- |
+| Systolic Blood Pressure  | > 140  |
+| Diastolic Blood Pressure  | < 90  |
+	
+*Table 2: Isolated Systolic Hypertension ranges according to WebMD guidelines.*
 
 
 ## Method
@@ -62,6 +67,8 @@ Figure 5c: Distribution results of current cigarette smoker or not current cigar
 Figure 5d: Distribution results of Isolated Systolic Hypertension in the Framingham Heart Study dataset.
 
 Figure 5e: Distribution results of age in the Framingham Heart Study dataset.
+
+Note: 124 observations were deleted due to missing values for the response and explanatory variables.
  
 Figure 6: Multiple Logistic Regression Model taking consideration of covariates current cigarette smoker, age group, isolated systolic hypertension, and cholesterol category to predict a value for hypertension on the average patient. 
 
