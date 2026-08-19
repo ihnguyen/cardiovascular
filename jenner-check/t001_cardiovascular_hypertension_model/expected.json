@@ -1,0 +1,14 @@
+{
+  "_captured_at": "2026-08-19T16:30:00Z",
+  "_captured_run_id": "r_7db697a68b0b4c4d8560d44b5a590f68",
+  "status": "ok",
+  "exit_code": 0,
+  "log_contains": [
+    "NOTE: Wrote frm (20 rows, 10 columns).",
+    "NOTE: Wrote frm (20 rows, 13 columns).",
+    "NOTE: FORMAT ishF defined (2 ranges).",
+    "NOTE: PROC LOGISTIC data=frm"
+  ],
+  "log_does_not_contain": ["ERROR:", "[JENNER-ERROR"],
+  "diagnostics": {"parse_warnings": [], "runtime_warnings": []}
+}

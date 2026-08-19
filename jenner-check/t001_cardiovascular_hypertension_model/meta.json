@@ -1,0 +1,7 @@
+{
+  "bundle": "t001_cardiovascular_hypertension_model",
+  "source_file": "SAS Code.sas",
+  "source_blob_sha": "99b75292ea6f20a039f651149c63a916e64f7ecc",
+  "source_commit": "e251116ebd6c598eed8cc64bde969893cbaa3288",
+  "notes": "Author's hypertension-vs-cholesterol modeling pipeline (Framingham Heart Study teaching dataset, per README) adapted to run standalone: original reads hca202.frmgham via a local libname not present in the repo, so this bundle substitutes 20 rows of synthetic data with the same columns the author's proc sql selects (RANDID HYPERTEN SEX TOTCHOL AGE SYSBP DIABP CURSMOKE BMI BPMEDS). The CHOLCATEGORY/AGEGROUP assignment block (original lines 39-46) was open code floating outside any DATA step boundary with the healthy/borderline legs of the cholcategory if/else chain missing from the committed file -- restored the two missing legs using the exact thresholds from the author's own README Table 1 (<200 healthy, 200-239 borderline, >=240 high) and folded the block back inside the DATA step. ISH computation, format labels, variable names, and the PROC CORR / PROC FREQ (chisq) / PROC UNIVARIATE / PROC LOGISTIC (class + reference levels) calls are otherwise unchanged from the source script. Dropped proc contents (needs the real external libname dataset) and proc plot (not meaningful against a 20-row synthetic sample); proc sql subsetting is superseded by the inline sample already being pre-subsetted to those columns."
+}

@@ -1,0 +1,34 @@
+NOTE: Option OBS changed to 100.
+NOTE: DATA frm
+
+NOTE: Processing inline DATALINES (20 lines)
+
+NOTE: Read 20 rows from DATALINES.
+NOTE: Wrote frm (20 rows, 10 columns).
+NOTE: DATA elapsed:
+  wall  0.00 seconds
+  cpu   0.00 seconds
+NOTE: DATA frm
+
+
+NOTE: Read 20 rows from frm.
+NOTE: Wrote frm (20 rows, 13 columns).
+NOTE: DATA elapsed:
+  wall  0.00 seconds
+  cpu   0.00 seconds
+NOTE: PROC FORMAT library=WORK
+
+NOTE: FORMAT ishF defined (2 ranges).
+NOTE: FORMAT bpmedsF defined (2 ranges).
+NOTE: FORMAT cursmokeF defined (2 ranges).
+NOTE: FORMAT sexF defined (2 ranges).
+NOTE: FORMAT hypertenF defined (2 ranges).
+NOTE: PROC CORR data=frm
+
+NOTE: PROC FREQ
+NOTE: PROC FREQ statement used.
+NOTE: PROC UNIVARIATE
+NOTE: PROC LOGISTIC data=frm
+
+NOTE: Using Python statsmodels.api.Logit version 0.14.6
+NOTE: PROC LOGISTIC completed. Results written to: ./ods_output/logistic_results.spec.json

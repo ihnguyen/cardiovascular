@@ -1,0 +1,427 @@
+                    The CORR Procedure
+                      2 Variables:    HYPERTEN   TOTCHOL
+                    Simple Statistics
+Variable         N      Mean   Std Dev       Sum   Minimum   Maximum
+--------  --------  --------  --------  --------  --------  --------
+HYPERTEN        20    0.50000   0.51299    10.00000    0.00000    1.00000
+TOTCHOL         20  227.75000  49.22331  4555.00000  160.00000  312.00000
+   Pearson Correlation Coefficients, N = 20
+          Prob > |r| under H0: Rho=0
+            HYPERTEN   TOTCHOL
+--------  --------  --------
+HYPERTEN   1.00000   0.88272
+              .       <.0001
+TOTCHOL    0.88272   1.00000
+            <.0001      .
+                                                   The FREQ Procedure
+
+Table of HYPERTEN by cholcategory
+
+Frequency
+Percent
+Row Pct
+Col Pct
+
+HYPERTEN |1 - healthy |2 - borderl |   3 - high |       Total
+---------+------------+------------+------------+------------
+0        |          8 |          2 |          0 |          10
+         |      40.00 |      10.00 |       0.00 |       50.00
+         |      80.00 |      20.00 |       0.00 |      100.00
+         |     100.00 |      66.67 |       0.00 |       50.00
+---------+------------+------------+------------+------------
+1        |          0 |          1 |          9 |          10
+         |       0.00 |       5.00 |      45.00 |       50.00
+         |       0.00 |      10.00 |      90.00 |      100.00
+         |       0.00 |      33.33 |     100.00 |       50.00
+---------+------------+------------+------------+------------
+Total    |          8 |          3 |          9 |          20
+
+Statistics for Table of HYPERTEN by cholcategory
+
+Statistic                                DF  Value         Prob
+--------------------------------------------------------------
+Chi-Square                                2 17.3333       0.0002
+Likelihood Ratio Chi-Square               2 23.9068       0.0000
+Mantel-Haenszel Chi-Square                1 16.1976       0.0001
+
+Phi Coefficient                      0.9309
+Contingency Coefficient              0.6814
+Cramer's V                           0.9309
+
+WARNING: 100% of the cells have expected counts less than 5. Chi-Square may not be a valid test.
+
+                                                The UNIVARIATE Procedure
+                                                  Variable:  HYPERTEN
+
+                                                        Moments
+
+N                                 20    Sum Weights                       20
+Mean                        0.500000    Sum Observations           10.000000
+Std Deviation               0.512989    Variance                    0.263158
+Skewness                    0.000000    Kurtosis                   -2.235294
+Uncorrected SS             10.000000    Corrected SS                5.000000
+Coeff Variation           102.597835    Std Error Mean              0.114708
+
+        Basic Statistical Measures         
+
+Location            Variability            
+--------  --------  -------------  --------
+Mean      0.500000  Std Deviation  0.512989
+Median    0.500000  Variance       0.263158
+Mode      0.000000  Range          1.000000
+
+     NOTE: The mode displayed is the smallest of 2 modes with a count of 10.
+
+Quantiles (Definition 5)
+
+Quantile    Estimate
+----------  --------
+0% Min      0.000000
+1%          0.000000
+5%          0.000000
+10%         0.000000
+25% Q1      0.000000
+50% Median  0.500000
+75% Q3      1.000000
+90%         1.000000
+95%         1.000000
+99%         1.000000
+100% Max    1.000000
+
+         Extreme Observations         
+
+      Lowest             Highest
+   Value       Obs     Value       Obs
+--------  --------  --------  --------
+0.000000         2  1.000000        11
+0.000000         4  1.000000        13
+0.000000         6  1.000000        15
+0.000000         8  1.000000        17
+0.000000        10  1.000000        19
+
+
+                                               Tests for Location: Mu0=0
+ 
+                                    Test           -Statistic-    -----p Value------
+
+                                    Student's t    t  4.358899    Pr > |t|    0.0003
+                                    Sign           M         5    Pr >= |M|   0.0020
+                                    Signed Rank    S      27.5    Pr >= |S|   0.0020
+
+
+                                                The UNIVARIATE Procedure
+                                                   Variable:  TOTCHOL
+
+                                                        Moments
+
+N                                 20    Sum Weights                       20
+Mean                      227.750000    Sum Observations         4555.000000
+Std Deviation              49.223310    Variance                 2422.934211
+Skewness                    0.308997    Kurtosis                   -1.284516
+Uncorrected SS        1083437.000000    Corrected SS            46035.750000
+Coeff Variation            21.612869    Std Error Mean             11.006667
+
+           Basic Statistical Measures           
+
+Location              Variability               
+--------  ----------  -------------  -----------
+Mean      227.750000  Std Deviation    49.223310
+Median    218.000000  Variance       2422.934211
+Mode               .  Range           152.000000
+
+Quantiles (Definition 5)
+
+Quantile      Estimate
+----------  ----------
+0% Min      160.000000
+1%          160.000000
+5%          162.500000
+10%         168.500000
+25% Q1      186.000000
+50% Median  218.000000
+75% Q3      271.500000
+90%         298.500000
+95%         306.500000
+99%         312.000000
+100% Max    312.000000
+
+           Extreme Observations           
+
+       Lowest               Highest
+     Value       Obs       Value       Obs
+----------  --------  ----------  --------
+160.000000         8  275.000000        19
+165.000000        14  288.000000         7
+172.000000         4  296.000000        15
+178.000000        12  301.000000         5
+182.000000        18  312.000000        11
+
+
+                                               Tests for Location: Mu0=0
+ 
+                                    Test           -Statistic-    -----p Value------
+
+                                    Student's t    t    20.692    Pr > |t|    <.0001
+                                    Sign           M        10    Pr >= |M|   <.0001
+                                    Signed Rank    S       105    Pr >= |S|   <.0001
+
+
+                                                The UNIVARIATE Procedure
+                                                  Variable:  CURSMOKE
+
+                                                        Moments
+
+N                                 20    Sum Weights                       20
+Mean                        0.350000    Sum Observations            7.000000
+Std Deviation               0.489360    Variance                    0.239474
+Skewness                    0.681161    Kurtosis                   -1.719457
+Uncorrected SS              7.000000    Corrected SS                4.550000
+Coeff Variation           139.817281    Std Error Mean              0.109424
+
+        Basic Statistical Measures         
+
+Location            Variability            
+--------  --------  -------------  --------
+Mean      0.350000  Std Deviation  0.489360
+Median    0.000000  Variance       0.239474
+Mode      0.000000  Range          1.000000
+
+Quantiles (Definition 5)
+
+Quantile    Estimate
+----------  --------
+0% Min      0.000000
+1%          0.000000
+5%          0.000000
+10%         0.000000
+25% Q1      0.000000
+50% Median  0.000000
+75% Q3      1.000000
+90%         1.000000
+95%         1.000000
+99%         1.000000
+100% Max    1.000000
+
+         Extreme Observations         
+
+      Lowest             Highest
+   Value       Obs     Value       Obs
+--------  --------  --------  --------
+0.000000         1  1.000000         6
+0.000000         4  1.000000         9
+0.000000         5  1.000000        12
+0.000000         7  1.000000        15
+0.000000         8  1.000000        18
+
+
+                                               Tests for Location: Mu0=0
+ 
+                                    Test           -Statistic-    -----p Value------
+
+                                    Student's t    t  3.198557    Pr > |t|    0.0047
+                                    Sign           M       3.5    Pr >= |M|   0.0156
+                                    Signed Rank    S        14    Pr >= |S|   0.0156
+
+
+                                                The UNIVARIATE Procedure
+                                    Variable:  ish  (Isolated Systolic Hypertension)
+
+                                                        Moments
+
+N                                 20    Sum Weights                       20
+Mean                        0.350000    Sum Observations            7.000000
+Std Deviation               0.489360    Variance                    0.239474
+Skewness                    0.681161    Kurtosis                   -1.719457
+Uncorrected SS              7.000000    Corrected SS                4.550000
+Coeff Variation           139.817281    Std Error Mean              0.109424
+
+        Basic Statistical Measures         
+
+Location            Variability            
+--------  --------  -------------  --------
+Mean      0.350000  Std Deviation  0.489360
+Median    0.000000  Variance       0.239474
+Mode      0.000000  Range          1.000000
+
+Quantiles (Definition 5)
+
+Quantile    Estimate
+----------  --------
+0% Min      0.000000
+1%          0.000000
+5%          0.000000
+10%         0.000000
+25% Q1      0.000000
+50% Median  0.000000
+75% Q3      1.000000
+90%         1.000000
+95%         1.000000
+99%         1.000000
+100% Max    1.000000
+
+         Extreme Observations         
+
+      Lowest             Highest
+   Value       Obs     Value       Obs
+--------  --------  --------  --------
+0.000000         2  1.000000         7
+0.000000         3  1.000000        11
+0.000000         4  1.000000        13
+0.000000         6  1.000000        15
+0.000000         8  1.000000        19
+
+
+                                               Tests for Location: Mu0=0
+ 
+                                    Test           -Statistic-    -----p Value------
+
+                                    Student's t    t  3.198557    Pr > |t|    0.0047
+                                    Sign           M       3.5    Pr >= |M|   0.0156
+                                    Signed Rank    S        14    Pr >= |S|   0.0156
+
+
+                                                The UNIVARIATE Procedure
+                                                     Variable:  AGE
+
+                                                        Moments
+
+N                                 20    Sum Weights                       20
+Mean                       51.550000    Sum Observations         1031.000000
+Std Deviation              14.691476    Variance                  215.839474
+Skewness                    0.157515    Kurtosis                   -1.480381
+Uncorrected SS          57249.000000    Corrected SS             4100.950000
+Coeff Variation            28.499469    Std Error Mean              3.285114
+
+          Basic Statistical Measures          
+
+Location             Variability              
+--------  ---------  -------------  ----------
+Mean      51.550000  Std Deviation   14.691476
+Median    50.500000  Variance       215.839474
+Mode              .  Range           45.000000
+
+Quantiles (Definition 5)
+
+Quantile     Estimate
+----------  ---------
+0% Min      31.000000
+1%          31.000000
+5%          32.000000
+10%         33.500000
+25% Q1      38.500000
+50% Median  50.500000
+75% Q3      64.500000
+90%         71.000000
+95%         74.000000
+99%         76.000000
+100% Max    76.000000
+
+          Extreme Observations          
+
+      Lowest               Highest
+    Value       Obs      Value       Obs
+---------  --------  ---------  --------
+31.000000        14  66.000000        15
+33.000000         8  68.000000         5
+34.000000         4  70.000000        19
+36.000000        18  72.000000         7
+38.000000        10  76.000000        11
+
+
+                                               Tests for Location: Mu0=0
+ 
+                                    Test           -Statistic-    -----p Value------
+
+                                    Student's t    t    15.692    Pr > |t|    <.0001
+                                    Sign           M        10    Pr >= |M|   <.0001
+                                    Signed Rank    S       105    Pr >= |S|   <.0001
+
+          The LOGISTIC Procedure           
+             Model Information             
+
+Data Set                   WORK.FRM        
+Response Variable          HYPERTEN        
+Number of Response Levels  2               
+Model                      binary logit    
+Optimization Technique     Fisher's scoring
+
+Number of Observations Read        20
+Number of Observations Used        20
+
+            Response Profile            
+  Probability modeled is HYPERTEN='1'   
+
+Ordered Value  HYPERTEN  Total Frequency
+-------------  --------  ---------------
+            1  0                      10
+            2  1                      10
+
+                     Class Level Information                     
+
+                                      Design Variables
+Class         Value                                              
+------------  -----------  --------  --------  --------  --------
+cholcategory  1 - healthy         0         0                    
+              2 - borderl         1         0                    
+              3 - high            0         1                    
+CURSMOKE      0                   0                              
+              1                   1                              
+agegroup      30s                 0         0         0         0
+              40s                 1         0         0         0
+              50s                 0         1         0         0
+              60s                 0         0         1         0
+              70s                 0         0         0         1
+ish           0                   0                              
+              1                   1                              
+
+      Model Convergence Status      
+
+WARNING: The model did not converge.
+
+                                                                                                                     
+---------------------------------------------------------------------------------------------------------------------
+WARNING: There is possibly a quasi-complete separation of data points. The maximum likelihood estimate may not exist.
+
+Model Fit Statistics
+
+Criterion     Value
+---------  --------
+AIC          24.420
+-2 Log L      6.420
+SC           33.381
+
+                         Analysis of Maximum Likelihood Estimates                         
+
+Parameter                        DF  Estimate  Standard Error  Wald Chi-Square  Pr > ChiSq
+------------  -----------  --------  --------  --------------  ---------------  ----------
+Intercept                         1   -2.4000          1.5033           2.5489      0.1104
+cholcategory  2 - borderl         1    0.2233          2.7544           0.0066      0.9354
+cholcategory  3 - high            1    1.2195          4.9847           0.0599      0.8067
+CURSMOKE      1                   1    0.0949          1.8087           0.0028      0.9582
+agegroup      40s                 1    0.6957          2.8227           0.0607      0.8053
+agegroup      50s                 1    2.5666          5.0466           0.2587      0.6110
+agegroup      60s                 1    2.1840          6.9913           0.0976      0.7547
+agegroup      70s                 1    2.4178          7.5508           0.1025      0.7488
+ish           1                   1    0.7085          3.0793           0.0529      0.8180
+
+                               Odds Ratio Estimates                                
+
+                                                         95% Wald Confidence Limits
+Effect                                   Point Estimate                            
+---------------------------------------  --------------  ------------  ------------
+cholcategory 2 - borderl vs 1 - healthy           1.250         0.006       276.385
+cholcategory 3 - high vs 1 - healthy              3.386        <0.001      >999.999
+CURSMOKE 1 vs 0                                   1.100         0.032        38.085
+agegroup 40s vs 30s                               2.005         0.008       506.748
+agegroup 50s vs 30s                              13.022        <0.001      >999.999
+agegroup 60s vs 30s                               8.882        <0.001      >999.999
+agegroup 70s vs 30s                              11.222        <0.001      >999.999
+ish 1 vs 0                                        2.031         0.005       848.839
+
+Association of Predicted Probabilities and Observed Responses
+
+Percent Concordant     100.0  Somers' D     1.000
+Percent Discordant       0.0  Gamma         1.000
+Percent Tied             0.0  Tau-a         0.526
+Pairs                    100  c             1.000
+
